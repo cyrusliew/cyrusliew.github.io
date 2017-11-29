@@ -96,7 +96,7 @@ button {
   border: none;
   outline: none !important; }
 
-.transition, .section#creation .project .holder a, #ccircle-fam #ccircle-pic .cyear div.yearnav button {
+.transition, .section#creation .project .holder a, .section#get .social-links a, #ccircle-fam #ccircle-pic .cyear div.yearnav button {
   transition: 0.25s all ease;
   -webkit-transition: 0.25s all ease;
   -moz-transition: 0.25s all ease;
@@ -231,7 +231,14 @@ button {
     .section#get .social-links {
       font-size: 36px; }
       .section#get .social-links a {
-        margin-right: 10px; }
+        border-bottom: 2px solid transparent;
+        display: inline-block;
+        margin-right: 10px;
+        position: relative;
+        top: 0; }
+        .section#get .social-links a:hover {
+          border-color: #ffc700;
+          top: -.2em; }
     .section#get .current-status {
       margin-top: 15px; }
       .section#get .current-status p {

@@ -295,7 +295,17 @@ button{
 		.social-links{
 			font-size: 36px;
 			a{
+				@extend .transition;
+				border-bottom: 2px solid transparent;
+				display: inline-block;
 				margin-right: 10px;
+				position: relative;
+				top: 0;
+
+				&:hover {
+					border-color: $maincolor;
+					top: -.2em;
+				}
 			}
 		}
 		.current-status{

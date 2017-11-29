@@ -121,16 +121,20 @@
 		"content":"One of the powerful CMS in the market, specialise in front end aspects, from custom theming to custom site structure that build around clients' needs.",
 		"acquirement":[
 			{
-				"name":"jQuery"
+				"name":"jQuery",
+				"imgsrc":"badges/jquery.png"
 			},
 			{
-				"name":"Drupal"
+				"name":"Drupal",
+				"imgsrc":"badges/drupal8.png"
 			},
 			{
-				"name":"SCSS"
+				"name":"SCSS",
+				"imgsrc":"badges/less.png"
 			},
 			{
-				"name":"PHP"
+				"name":"PHP",
+				"imgsrc":"badges/php.png"
 			}
 		]
 	},
@@ -142,16 +146,20 @@
 		"content":"It has been a long journey as a web designer & developer, the passion is as strong as first day, definitely a long way to go to become a <del>Pokémon</del> master in this field.",
 		"acquirement":[
 			{
-				"name":"jQuery"
+				"name":"jQuery",
+				"imgsrc":"badges/jquery.png"
 			},
 			{
-				"name":"Wordpress"
+				"name":"Wordpress",
+				"imgsrc":"badges/wordpress.png"
 			},
 			{
-				"name":"Pre-process CSS"
+				"name":"Pre-process CSS",
+				"imgsrc":"badges/less.png"
 			},
 			{
-				"name":"PHP"
+				"name":"PHP",
+				"imgsrc":"badges/php.png"
 			}
 		]
 	}
