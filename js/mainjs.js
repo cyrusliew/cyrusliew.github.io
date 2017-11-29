@@ -41,7 +41,7 @@ $(document).ready(function() {
 				$(".arw-right").addClass("active");
 			}
 		}
-	})
+	});
 	$("#main-container").fullpage({
 		menu: '#menu',
 		scrollingSpeed: scrollSpeed,

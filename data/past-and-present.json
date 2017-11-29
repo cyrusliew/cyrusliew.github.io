@@ -114,6 +114,27 @@
 		]
 	},
 	{
+		"year":"2017",
+		"timeline":"JAN 2017 - PRESENT",
+		"company":"Communica",
+		"role":"as Drupal Front End Web Developer/ Designer",
+		"content":"One of the powerful CMS in the market, specialise in front end aspects, from custom theming to custom site structure that build around clients' needs.",
+		"acquirement":[
+			{
+				"name":"jQuery"
+			},
+			{
+				"name":"Drupal"
+			},
+			{
+				"name":"SCSS"
+			},
+			{
+				"name":"PHP"
+			}
+		]
+	},
+	{
 		"year":"PRESENT",
 		"timeline":"SINCE 2013",
 		"company":"Freelance Web Design & Developer",
@@ -127,7 +148,7 @@
 				"name":"Wordpress"
 			},
 			{
-				"name":"LESS CSS"
+				"name":"Pre-process CSS"
 			},
 			{
 				"name":"PHP"
