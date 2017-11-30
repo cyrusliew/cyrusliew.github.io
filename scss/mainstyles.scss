@@ -3,49 +3,59 @@
 	font-weight: 300;
 	src: url('../fonts/opensans/OpenSans-Light.ttf');
 }
+
 @font-face{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 300;
 	font-style: italic;
 	src: url('../fonts/opensans/OpenSans-LightItalic.ttf');
 }
+
 @font-face{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	src: url('../fonts/opensans/OpenSans-Regular.ttf');
 }
+
 @font-face{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 400;
 	font-style: italic;
 	src: url('../fonts/opensans/OpenSans-Italic.ttf');
-}@font-face{
+}
+
+@font-face{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	src: url('../fonts/opensans/OpenSans-Semibold.ttf');
 }
+
 @font-face{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 600;
 	font-style: italic;
 	src: url('../fonts/opensans/OpenSans-SemiboldItalic.ttf');
 }
+
 @font-face{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	src: url('../fonts/opensans/OpenSans-Bold.ttf');
 }
+
 @font-face{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 700;
 	font-style: italic;
 	src: url('../fonts/opensans/OpenSans-BoldItalic.ttf');
 }
+
 @font-face{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 800;
 	src: url('../fonts/opensans/OpenSans-ExtraBold.ttf');
 }
+
 @font-face{
 	font-family: 'Open Sans', sans-serif;
 	font-weight: 800;
@@ -57,39 +67,54 @@
 $maincolor: #ffc700;
 $maindarkcolor: #0f0f0f;
 
-.centralize{
+%centralize {
 	margin: auto;
 	top: 0;
 	bottom: 0;
 	left: 0;
 	right: 0;
 }
-.border-box{
+%border-box {
 	box-sizing: border-box;
 }
-.text-shadow{
-	text-shadow: 5px 5px 0 black;
+%text-shadow {
+	text-shadow: 5px 5px 0 black; 
 }
 /* ---- end of variables ---- */
 
 body{
 	font-family: 'Open Sans', sans-serif;
 	background: $maindarkcolor;
+	letter-spacing: 1px;
 }
 
 .loading{
 	overflow: hidden; /* hide scrollbar */
 }
 
+.spacing{
+	height: 75px;
+}
+.spacing-15{
+	height: 15px;
+}
+.spacing-62{
+	height: 62px;
+}
+
 /* ==== elements configuration ==== */
 p{
 	color: white;
-	font-size: 18px;
+	font-size: 16px;
 	font-weight: 200;
 	text-align: justify;
 	line-height: 1.5;
+	letter-spacing: 1px;
 	@media(max-width: 767px){
-		font-size: 16px;
+		font-size: 14px;
+	}
+	@media(max-width: 543px){
+		/*font-size: 14px;*/
 	}
 }
 
@@ -104,7 +129,7 @@ button{
 	outline: none !important;
 }
 
-.transition{
+%transition{
 	transition: 0.25s all ease;
 	-webkit-transition: 0.25s all ease;
 	-moz-transition: 0.25s all ease;
@@ -121,9 +146,9 @@ button{
 	background:none;
 	box-sizing: border-box;
 	/*border: 1px solid $maincolor;*/
-	&#intro{
+	&#id-intro{
 	}
-	&#about{
+	&#id-about{
 		div.container{
 			margin-top: 15%;
 			.left-info{
@@ -133,18 +158,27 @@ button{
 			}
 			.right-intro{
 				text-align: justify;
+				@media(max-width: 543px){
+					margin-top: 25px;
+				}
 			}
 			p.title{
 				margin: 0;
 				font-weight: 600;
 				color: $maincolor;
+				font-size: 14px;
 			}
 			p:last-child{
 				margin: 0;
 			}
+			@media(max-width: 543px){
+				@media(max-height: 568px){
+					margin-top: 60%;
+				}
+			}
 		}
 	}
-	&#past-and-present{
+	&#id-past-and-present{
 		.container{
 			margin-top: 300px;
 			color: white;
@@ -165,12 +199,12 @@ button{
 					font-weight: 600;
 				}
 				.company{
-					font-size: 36px;
+					font-size: 28px;
 					font-weight: bold;
-					@extend .text-shadow;
+					/*.text-shadow;*/
 				}
 				.role{
-					font-size: 28px;
+					font-size: 24px;
 					font-weight: normal;
 					font-style: italic;
 				}
@@ -184,6 +218,8 @@ button{
 				}
 				.badges{
 					img{
+						width: 142px;
+						height: auto;
 						margin: 10px;
 					}
 					.leveled{
@@ -199,143 +235,304 @@ button{
 					}
 				}
 			}
+			@media(max-width: 767px){
+				margin-top: 150px;
+			}
+			@media(max-width: 543px){
+				margin-top: 100px;
+				.pnp-content{
+					.timeline{
+						font-size: 16px;
+					}
+					.company{
+						font-size: 20px;
+					}
+					.role{
+						font-size: 18px;
+					}
+				}
+				.acquirement{
+					.title{
+						font-size: 16px;
+					}
+					.badges{
+						img{
+							width: 95%;
+							margin: 5%;
+						}
+					}
+				}
+				@media(max-height: 568px){
+					margin-top: 175px;
+					margin-bottom: 25px;
+				}
+				@media(max-height: 667px){
+					margin-top: 125px;
+				}
+			}
 		}
 	}
-	&#what-is-inside{
+	&#id-what-is-inside{
 		.wii-badges{
-			.second-row{
-				padding-left: 10%;
+			>div{;
+				@media(max-width: 767px){
+					text-align:center;
+				}
+				img{
+					@media(max-width: 543px){
+						margin-bottom: 15px;
+					}
+				}
 			}
-			img{
-				margin: 15px;
+			.second-row{
+				@media(min-width: 768px){
+					margin-left: 10%;
+				}
+				@media(min-width: 544px){
+					margin-top: 15px;
+				}
 			}
 		}
 	}
-	&#creation{
+	&#id-creation{
 		.project{
-			height: 200px;
+			height: 250px;
 			/*border: 1px solid $maincolor;*/
-			@extend .border-box;
+			@extend %border-box;
 			padding: 20px;
 			overflow: hidden;
 			.holder{
 				position: relative;
-				background: black;
+				background: url(../images/clogo-loader.gif) center black no-repeat;
+				background-size: 15px;
 				overflow: hidden;
+				height: 100%;
 				a{
 					position: absolute;
 					width: 100%;
 					height: 100%;
 					top:0;
-					background: rgba(255, 199, 0, 0.85);
-					opacity: 0;
+					left: 0;
+					background: $maincolor;
+					opacity: 0	;
 					text-align: center;
-					@extend .transition;
+					@extend %transition;
+					white-space: nowrap;
+					@media(max-width: 543px){
+						background: fade($maincolor, 85%);
+						opacity: 1;
+					}
 					&:hover{
 						opacity: 1;
 					}
 					&:before {
-						content: '\200B';
-						/*   content: '';
-						margin-left: -0.25em; */
-						display: inline-block;
-						height: 100%;
-						vertical-align: middle;
+					  content: '';
+					  display: inline-block;
+					  height: 100%;
+					  vertical-align: middle;
+					  margin-right: -0.25em; /* Adjusts for spacing */
+
 					}
-					span.middle{
+					.middle{
 						  display: inline-block;
 						  vertical-align: middle;
-						  width: 300px;
-						  padding: 10px 15px;
-						  border: #a0a0a0 solid 1px;
-						  background: #f5f5f5;
+						  width: 100%;
+						  /*padding: 10px 15px;*/
+						  /*border: #a0a0a0 solid 1px;*/
 						i{
-							font-size: 54px;
+							font-size: 24px;
 							color: black;
+						}
+						h3{
+							white-space: normal;
+							font-size: 16px;
+							letter-spacing: 1px;
+							margin: 10px 20px;
+							font-weight: 400;
 						}
 						.date{
 							font-size: 13px;
 							color: black;
 							text-align: center;
+							margin: 0;
+							font-weight: 400;
 						}
 					}
 				}
 			}
 		}
 	}
-	&#get{
-    text-align: center;
-    
+	&#id-get{
 		form{
 			::-webkit-input-placeholder {
 			   color: black;
 			}
 			:-moz-placeholder { /* Firefox 18- */
-			   color: black;
+			   color: black;  
 			}
 
 			::-moz-placeholder {  /* Firefox 19+ */
-			   color: black;
+			   color: black;  
 			}
 
-			:-ms-input-placeholder {
-			   color: black;
+			:-ms-input-placeholder {  
+			   color: black;  
 			}
 			input, textarea{
 				background-color: $maincolor;
 				border-radius: 0;
 				border: none;
-				box-shadow: 5px 5px 0 black;
-				font-size: 18px;
+				/*box-shadow: 5px 5px 0 black;*/
+				font-size: 16px;
 				color: black;
-				margin-bottom: 37px;
-				padding: 15px 15px;
+				margin-bottom: 28px;
+				padding: 5px 10px;
+				&:last-child{
+					margin: 0;
+				}
+			}
+			.rcc-holder{
+				width: 100%;
+				margin-bottom: 28px;
+				#g-recaptcha{
+				}
+				.g-msg{
+					color: $maincolor;
+					display: none;
+				}
+			}
+			.btn-submit{
+				border: 1px solid $maincolor;
+				color: $maincolor;
+				background: none;
+				padding: 5px 50px;
+				&:hover, &.sent{
+					background: $maincolor;
+					color: $maindarkcolor;
+				}
+				&.sent{
+					pointer-events: none;
+				}
+			}
+			@media(max-width:767px){
+				input, textarea{
+					font-size: 14px;
+					margin-bottom: 15px;
+				}
+				#g-recaptcha{
+					margin-bottom: 15px;
+				}
+				.btn-submit{
+					font-size: 14px;
+					width: 100%;
+				}
+			}
+			@media(max-width:543px){
+				border-bottom: 1px dashed $maincolor;
+				padding-bottom: 15px;
 			}
 		}
 		.social-links{
-			font-size: 36px;
+			font-size: 28px;
 			a{
-				@extend .transition;
-				border-bottom: 2px solid transparent;
-				display: inline-block;
-				margin-right: 10px;
+				@extend %transition;
 				position: relative;
-				top: 0;
+				margin-right: 10px;
 
-				&:hover {
-					border-color: $maincolor;
-					top: -.2em;
+				&:not(.resume) {
+					border-bottom: 2px solid transparent;
+					top: 0;
+
+					&:hover {
+						border-color: $maincolor;
+						padding-bottom: .2em;
+						top: -.2em;
+					}
+				}
+
+				&.resume{
+					font-size: 16px;
+					color: $maincolor;
+					border: 1px solid $maincolor;
+					padding: 5px 10px;
+					&:hover{
+						background: $maincolor;
+						color: $maindarkcolor;
+					}
+				}
+			}
+			@media(max-width: 991px){
+				font-size: 24px;
+				a{
+					&.resume{
+						margin-top: 15px;
+						display: block;
+						text-align: center;
+						font-size: 14px;
+					}
+				}
+			}
+			@media(max-width: 543px){
+				padding-top: 15px;
+				font-size: 20px;
+				text-align: center;
+				a{
+					&.resume{
+					}
 				}
 			}
 		}
 		.current-status{
 			margin-top: 15px;
-
-			p {
-				text-align: center;
-			}
 		}
+	}
+}
+
+/** FOOTER **/
+footer{
+	width: 100%;
+	background: $maindarkcolor;
+	text-align: center;
+	color: white;
+	font-weight: 200;
+	font-size: 14px;
+	padding: 14px 0;
+	opacity: 0;
+	z-index: 100;
+	position: fixed;
+	@media(max-width: 543px){
+		font-size:12px;
 	}
 }
 #ccircle-fam{
 	position: absolute;
-	@extend .centralize;
+	@extend %centralize;
 	width: 100%;
 	overflow: visible;
 	/*z-index: -1;*/
 	pointer-events: none;
+	left: -40%;
 	.ccirclesvg{
 		display: block;
 		position: absolute;
 		height: 1495.2px;
 		width: 1495.2px;
 		max-width: 100%;
-		@extend .centralize;
+		@extend %centralize;
 		.ccircle{
 			fill:none;
 			stroke:$maincolor;
 			stroke-width:2;
-      stroke-miterlimit:10;
+			stroke-miterlimit:10;
+			opacity: 1;
+			/*transform: scale(0.5); 
+			-webkit-transform: scale(0.5);
+			-ms-transform: scale(0.5);
+			-moz-transform: scale(0.5);
+			transform-origin: 50% 50%;
+			-webkit-transform-origin: 50% 50%;
+			-ms-transform-origin: 50% 50%;
+			-moz-transform-origin: 50% 50%;*/
 		}
 	}
 	#ccircle-pic{
@@ -346,8 +543,8 @@ button{
 		border-radius: 50%;
 		z-index: 100;
 		background-color: $maindarkcolor;
-		@extend .centralize;
-		@extend .border-box;
+		@extend %centralize;
+		@extend %border-box;
 		.cimg-holder{
 			position: absolute;
 			width: 100%;
@@ -356,7 +553,7 @@ button{
 			border-radius: 50%;
 			img{
 				position: absolute;
-				@extend .centralize;
+				@extend %centralize;
 			}
 		}
 		.cyear{
@@ -368,11 +565,11 @@ button{
 			font-weight: bold;
 			color: $maincolor;
 			height: 1.5em;
-			@extend .centralize;
+			@extend %centralize;
 			opacity: 0;
 			div.yearnav{
 				position: absolute;
-				@extend .centralize;
+				@extend %centralize;
 				button{
 					pointer-events: auto;
 					position: absolute;
@@ -380,11 +577,11 @@ button{
 					width: 50px;
 					cursor: initial;
 					transform-origin: 50%;
-					@extend .centralize;
-					@extend .transition;
+					@extend %centralize;
+					@extend %transition;
 					&.active{
 						cursor: pointer;
-						svg > path {
+						svg > path{
 							fill: $maincolor;
 						}
 						&.arw-left{
@@ -407,24 +604,30 @@ button{
 							fill: transparent;
 						}
 					}
+
+					$pad-val: 8em;
 					&.arw-left{
-						left: -8em;
+						left: -$pad-val;
 					}
 					&.arw-right{
-						right: -8em;
+						right: -$pad-val;
 					}
 				}
 			}
 		}
 	}
+	@media(max-width: 543px){
+		left: 0;
+		bottom: 30%;
+	}
 }
 #csstar-fam{
 	position: absolute;
-	@extend .centralize;
+	@extend %centralize;
 	z-index: -2;
 	.csstarsvg{
 		position: absolute;
-		@extend .centralize;
+		@extend %centralize;
 		top: -30%;
 		width: 30%;
 		height: 60%;
@@ -439,6 +642,9 @@ button{
 			fill: $maincolor;
 			opacity: 0;
 		}
+	}
+	@media(max-width: 543px){
+		opacity: 0.3;
 	}
 }
 #bg-mt-cook{
@@ -464,15 +670,18 @@ button{
 	/*   content: '';
 	  margin-left: -0.25em; */
 	  display: inline-block;
-	  height: 100%;
+	  height: 100%; 
 	  vertical-align: middle;
+	  @media(max-width: 544px){
+	  	display:none;
+	  }
 	}
 	.csite-name-text{
 		margin-left: 450px;
 		display: inline-block;
 		vertical-align: middle;
 		h1.csite-heading{
-			text-shadow: 5px 5px 0 black;
+			/*.text-shadow;*/
 			margin-bottom: 60px;
 			font-weight: bold;
 		}
@@ -482,12 +691,33 @@ button{
 			display: inline-block;
 			vertical-align: middle;
 			margin-left: -250px;
-			margin-bottom: -30px;
+			margin-bottom: -30px; 
 			font-style: italic;
 			font-weight: 200;
+			letter-spacing: 1px;
+		}
+	}
+	@media(max-width: 767px){
+		top: 15%;
+		.csite-name-text{
+			margin-left: 0;
+			h1.csite-heading{
+				margin-bottom: 15px;
+			}
+			.csite-pos-desc{
+				margin-left: 0;
+			}
+		}
+	}
+	@media(max-width: 543px){
+		top: 60%;
+		.csite-name-text{
+			h1.csite-heading{
+				font-size: 30px;
+			}
 		}
 		.ctab-space{
-
+			display: none;
 		}
 	}
 }
@@ -510,8 +740,26 @@ button{
 		border-radius: 50%;
 		height: 3px;
 		width: 3px;
-		@extend .centralize;
+		@extend %centralize;
 		bottom:20%;
+		display: none;
+		@media(min-width: 544px){
+			display: inline-block;
+		}
+	}
+	.scroller-mob{
+		position: absolute;
+		display: inline-block;
+		background: white;
+		border-radius: 50%;
+		height: 3px;
+		width: 3px;
+		@extend %centralize;
+		bottom:-20%;
+		display: none;
+		@media(max-width: 543px){
+			display: inline-block;
+		}
 	}
 	.mouse{
 		position: absolute;
@@ -519,10 +767,176 @@ button{
 		border: 1px solid white;
 		width: 25px;
 		height: 40px;
-		@extend .centralize;
+		@extend %centralize;
+		@media(max-width: 544px){
+			border-radius: 5px;
+		}
 	}
 }
 
+/** CREATION MODAL **/
+#creation-modal{
+	display: none;
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	z-index: 2000;
+	overflow-y: scroll;
+	overflow-x: hidden;
+	background: black;
+	.banner{
+		height: 100%;
+		overflow: hidden;
+		margin-top: 0%;
+		@extend %transition;
+		img{
+			width: 100%;
+			display: none;
+		}
+		&.push{
+			margin-top: -100%;
+		}
+	}
+	.banner-fixed{
+		left: 0;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		position: fixed;
+		z-index: -1;
+	}
+	.btn-close{
+		position: fixed;
+		right: 50px;
+		top: 25px;
+		color: white;
+		width: 50px;
+		height: 50px;
+		text-align: center;
+		background: opacify(black, .9);
+		i{
+			font-size: 30px;
+			line-height: 50px;
+			cursor: pointer;
+			@extend %transition;
+			&:hover{
+				font-size: 40px;
+			}
+		}
+	}
+	.content{
+		background: $maincolor;
+		width: 100%;
+		.scroll-hint{
+			bottom: 0 !important;
+		}
+		h2.title{
+			display: block;
+			max-width: 100%;
+			background: $maindarkcolor;
+			color: white;
+			margin: 0;
+			padding: 25px 0;
+			text-align: center;
+			font-size: 36px;
+			font-weight: 800;
+			font-style: italic;
+			@media(max-width: 767px){
+				font-size: 28px;
+			}
+			@media(max-width: 543px){
+				font-size: 24px;
+				padding: 25px;
+				text-align:left;
+			}
+		}
+		.container{
+			padding-top: 50px;
+			padding-bottom: 50px;
+			.info{
+				margin-bottom: 25px;
+			}
+			.p-date{
+				margin-bottom: 0;
+			}
+			.p-role{
+				font-size: 14px;
+			}
+			.gallery{
+				margin-top: 25px;
+				margin-bottom: 25px;
+				.inner-holder{
+					background: url(../images/clogo-loader-black.gif) center no-repeat;
+					img{
+						height: auto;
+					}
+				}
+			}
+			.link{
+				margin-top: 25px;
+				margin-bottom: 25px;
+				text-align: center;
+				iframe{
+					width: 100%;
+					height: width/56.25%;
+				}
+				.website-link:link, .website-link:visited{
+					color: black;
+					border: 2px solid $maindarkcolor;
+					&:hover{
+						color: white;
+						background: $maindarkcolor;
+					}
+					padding: 15px 20%;
+				}
+			}
+			p{
+				color: black;
+				font-weight: 400;
+				&.p-date{
+					font-weight: 700;
+				}
+			}
+			img{
+				margin-bottom: 15px; 
+			}
+		}
+	}
+	.next-project{
+		height: 100%;
+		overflow: hidden;
+		position: relative;
+		a{
+			width:100%;
+			height: 100%;
+			text-align: center;
+		}
+		img{
+			width: 100%;
+			opacity: 0;
+		}
+		h3{
+			position: absolute;
+			top: 50%;
+			left:0;
+			right: 0;
+			font-weight: 100;
+			font-size: 24px;
+			padding: 0 25px;
+			line-height: 1.5em;
+			@media(max-width: 767px){
+				font-size: 18px;
+			}
+			@media(max-width: 543px){
+				font-size: 16px;
+			}
+		}
+	}
+}
+
+/** LOADER **/
 .cloader{
 	z-index: 1000;
 	position: fixed;
@@ -537,6 +951,9 @@ button{
 				no-repeat;
 }
 body.loading{
+	overflow: hidden;
+}
+body.ohidden{
 	overflow: hidden;
 }
 body.loading .cloader{
