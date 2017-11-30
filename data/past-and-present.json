@@ -143,18 +143,22 @@
 		"timeline":"SINCE 2013",
 		"company":"Freelance Web Design & Developer",
 		"role":"",
-		"content":"It has been a long journey as a web designer & developer, the passion is as strong as first day, definitely a long way to go to become a <del>Pokémon</del> master in this field.",
+		"content":"I just cannot tell how much I love design and programming, the passion is as strong as the day I started it all, I love seeing myself getting better along the way. Keep exploring different ways to achieve better results is the biggest satisfaction of everything.",
 		"acquirement":[
 			{
 				"name":"jQuery",
 				"imgsrc":"badges/jquery.png"
 			},
 			{
+				"name":"Bootstrap",
+				"imgsrc":"badges/bootstrap.png"
+			},
+			{
 				"name":"Wordpress",
 				"imgsrc":"badges/wordpress.png"
 			},
 			{
-				"name":"Pre-process CSS",
+				"name":"LESS CSS",
 				"imgsrc":"badges/less.png"
 			},
 			{

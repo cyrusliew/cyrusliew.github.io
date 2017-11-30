@@ -4,6 +4,8 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
 	<title>Cyrus Liew</title>
+	<meta name="description" content="Wonder what will happen when design meets programming? This is Cyrus Liew, Front End Web Developer x Multimedia Designer, new to UX.">
+	<meta name="keywords" content="Cyrus Liew, Malaysia Designer, Malaysia Unicorn, Auckland Designer, Website, Front End Developer">
 	<link rel="icon" type="image/x-icon" href="images/favicon-new.png">
 	<link rel="stylesheet" type="text/css" href="css/tether.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
@@ -17,10 +19,21 @@
 	<script type="text/javascript" src="js/jquery-2.2.4.min.js"></script>
 	<script type="text/javascript" src="js/tether.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="js/scrolloverflow.min.js"></script>
 	<script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
 	<script type="text/javascript" src="js/TweenMax.min.js"></script>
+	<script type="text/javascript" src="js/plugins/ScrollToPlugin.min.js"></script>
 	<script type="text/javascript" src="js/slick.min.js"></script>
+	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/mainjs.js"></script>
+	<script type="text/javascript">
+		var onloadCallback = function() {
+			grecaptcha.render('g-recaptcha', {
+			  'sitekey' : '6LeZCykTAAAAAJuiwsgp2TBRJVgbi8Dtgb-ynhN3',
+			  'theme': 'dark'
+			});
+		};
+	</script>
 </head>
 <body class="loading">
 	<div class="cloader"></div>
@@ -33,34 +46,34 @@
 		<li data-menuanchor="creation"><a href="#creation">creation</a></li>
 	</nav>
 	<div id="main-container" class="container-fluid">
-	    <div id="intro" name="Intro" class="section active">
+	    <div id="id-intro" fp-name="Intro" class="section active">
 	    	&nbsp;
 	    </div>
-	    <div id="about" name="About" class="section">
+	    <div id="id-about" fp-name="About" danchor="about" class="section">
 		    <div class="container">
 		    	<div class="left-info col-xs-12 col-sm-6">
 		    		<p class="title">name</p>
 					<p>Cyrus Liew</p>
-					<p class="title">email</p>
-					<p>cyrusliew02@gmail.com</p>
 					<p class="title">portfolio</p>
 					<p><a href="http://www.behance.net/cyrus_liew" target="_blank">www.behance.net/cyrus_liew</a></p>
+					<p class="title">email</p>
+					<p>cyrusliew02@gmail.com</p>
 		    	</div>
 		    	<div class="right-intro col-xs-12 col-sm-6">
-		    		<p>Cyrus Liew my name, a front end web developer from Malaysia, currently based in New Zealand.</p>
+		    		<p>Cyrus Liew my name, a front end web developer/ designer from Malaysia, living in New Zealand. I am passionate about my life, always have fun in getting the biggest satisfaction when working on any design works. Love about being an inspiration of people around. Currently getting my hands dirty in Drupal Front End Web Development.</p>
 		    	</div>
 		    </div>
 	    </div>
-	    <div id="past-and-present" name="Past &amp; Present" class="section">
+	    <div id="id-past-and-present" fp-name="Past &amp; Present" danchor="past-and-present" class="section">
 	    	<div class="container">
-		    	<div class="pnp-content col-xs-12 col-sm-7">
+		    	<div class="pnp-content col-xs-12 col-sm-12 col-lg-7">
 		    		<h4 class="timeline">DEC 2012</h4>
 		    		<h3 class="company">Big Bad Wolf Book Sale Malaysia</h3>
 		    		<h3 class="role">as Floor Crew</h3>
 		    		<p class="desc">I was part of the floor crew under children book section area, giving the Big Bad Wolf Book Sale the largest book sale in the world, I have developed myself to be able to cope with Mount Everest sized of messy books.</p>
 		    	</div>
 		    	<div class="margin col-sm-1"></div>
-		    	<div class="acquirement col-xs-12 col-sm-4">
+		    	<div class="acquirement col-xs-12 col-sm-12 col-lg-4">
 		    		<h4 class="title">ACQUIRED SKILLS</h4>
 		    		<div class="badges">
 		    			<div><img src="images/badges/organizing-lvl-1.png" width="142" height="auto" /></div>
@@ -69,54 +82,79 @@
 		    	</div>
 	    	</div>
 	    </div>
-	    <div id="what-is-inside" name="What is Inside" class="section">
+	    <div id="id-what-is-inside" fp-name="What is Inside" danchor="what-is-inside" class="section">
+	    	<div class="spacing-15"></div>
 	    	<div class="container wii-badges">
-	    		<div class="first-row">
-		    		<img src="images/badges/communication-lvl-4.png" alt="Communication Skill Level 4">
-		    		<img src="images/badges/apple-lvl-3.png" alt="Apple Knowledge 3">
-		    		<img src="images/badges/organizing-lvl-3.png" alt="Organizing Skill Level 3">
+    			<div class="first-row col-xs-12 col-sm-12 col-md-10 col-lg-8">
+		    		<img class="col-sm-4" src="images/badges/communication-lvl-4.png" alt="Communication Skill Level 4">
+		    		<img class="col-sm-4" src="images/badges/apple-lvl-3.png" alt="Apple Knowledge 3">
+		    		<img class="col-sm-4" src="images/badges/organizing-lvl-3.png" alt="Organizing Skill Level 3">
 	    		</div>
-	    		<div class="second-row">
-		    		<img src="images/badges/cooking-lvl-2.png" alt="Cooking Skill Level 2">
-		    		<img src="images/badges/patient-lvl-2.png" alt="Communication Skill Level 2">
-		    		<img src="images/badges/leadership-lvl-beta.png" alt="Leadership Skill Level Beta">
+    			<div class="second-row col-xs-12 col-sm-12 col-md-10 col-lg-8">
+		    		<img class="col-sm-4" src="images/badges/cooking-lvl-2.png" alt="Cooking Skill Level 2">
+		    		<img class="col-sm-4" src="images/badges/patient-lvl-2.png" alt="Communication Skill Level 2">
+		    		<img class="col-sm-4" src="images/badges/leadership-lvl-beta.png" alt="Leadership Skill Level Beta">
 	    		</div>
 	    	</div>
+	    	<div class="spacing-15"></div>
 	    </div>
-	    <div id="creation" name="Creation" class="section">
+	    <div id="id-creation" fp-name="Creation" danchor="creation" class="section">
+	    	<div class="spacing-15"></div>
 		    <div class="container">
-		    	<div class="col-xs-12 col-sm-4 col-md-3 project">
+		    	<!-- <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 project">
 		    		<div class="holder">
-		    			<img class="screenshot" src="images/creation/wtsc.png" />
+		    			<img class="screenshot" src="images/creation/lapron.png" width="100%" />
 		    			<a href="#">
-		    				<span class="middle">
-			    				<i class="fa fa-graduation-cap"></i>
-			    				<h3 class="title">why are they so cold</h3>
-			    				<p class="date">NOV 2014</p>
-		    				</span>
+		    				<div class="middle">
+			    				<i class="fa fa-film"></i>
+			    				<h3 class="title">leather apron title sequence</h3>
+			    				<p class="date">NOV 2013</p>
+		    				</div>
 		    			</a>
 		    		</div>
-		    	</div>
+		    	</div> -->
 		    </div>
+	    	<div class="spacing-15"></div>
 	    </div>
-	    <div id="get" name="Get" class="section">
+	    <div id="id-get" fp-name="Get" danchor="get" class="section">
+	    	<div class="spacing-15"></div>
 		    <div class="container">
-		    	<div class="col-sm-12">
+		    	<div class="col-sm-5">
+		    		<form method="POST">
+		    			<input id="email" class="form-control" type="email" name="email" placeholder="email" required>
+		    			<input id="subject" class="form-control" type="text" name="subject" placeholder="subject" required>
+		    			<textarea id="msg" class="form-control" name="message" placeholder="message" required></textarea>
+		    			<div class="rcc-holder">
+			    			<div id="g-recaptcha"></div>
+			    			<small class="g-msg"><i class="fa fa-angle-up"></i> please verify yourself</small>
+		    			</div>
+		    			<button class="btn-submit" type="submit" name="submit">send</button>
+		    		</form>
+				    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+				        async defer>
+				    </script>
+		    	</div>
+		    	<div class="col-sm-1"></div>
+		    	<div class="col-sm-6">
 		    		<div class="social-links">
-						<a href="mailto:cyrusliew02@gmail.com"><i class="fa fa-envelope-o"></i></a>
-		    			<a href="http://www.instagram.com/cyrus_liew" target="_blank"><i class="fa fa-instagram"></i></a>
+		    			<a href="https://www.linkedin.com/in/cyrusliew" target="_blank"><i class="fa fa-linkedin"></i></a>
 		    			<a href="http://www.behance.net/cyrus_liew" target="_blank"><i class="fa fa-behance"></i></a>
-		    			<a href="https://www.linkedin.com/in/cyrusliew/" target="_blank"><i class="fa fa-linkedin"></i></a>
+		    			<a href="http://www.instagram.com/cyrus_liew" target="_blank"><i class="fa fa-instagram"></i></a>
 		    			<a href="tel:+64277712177"><i class="fa fa-phone"></i></a>
+		    			<a class="resume" href="download/cyrus-liew-cv.pdf" target="_blank">download resume</a>
 		    		</div>
 		    		<div class="current-status">
-		    			<p>Cyrus Liew is currently working in Auckland, New Zealand, as a Drupal Front End Web Developer.<br>
-		    			Available for freelance project online.</p>
+                        <p>Cyrus Liew is currently working in Auckland, New Zealand, as a Drupal Front End Web Developer.<br><br>
+                            Available for freelance project online.</p>
 		    		</div>
 		    	</div>
 		    </div>
+		    <div class="spacing-62"></div>
 	    </div>
 	</div>
+    <footer>
+    	2017 &copy; Cyrus Liew. All Rights Reserved.
+    </footer>
 	<div id="csstar-fam">
 		<svg class="csstarsvg">
 			<defs>
@@ -202,8 +240,8 @@
 			<div class="csite-name-text">
 				<h1 class="csite-heading">&#123; cyrus liew &#125;</h1>
 				<p class="csite-pos-desc">Graphic Design /<br>
-				<span class="ctab-space">&emsp; &emsp;</span> Web Design &amp; Development /<br>
-				<span class="ctab-space">&emsp; &emsp; &emsp; &emsp;</span> Front-End Development</p>
+				<span class="ctab-space">&emsp; &emsp; </span>Web Design &amp; Development /<br>
+				<span class="ctab-space">&emsp; &emsp; &emsp; &emsp; </span>Front-End Development</p>
 				<!-- <p class="csite-pos-desc">平面设计 /<br>
 				<span class="ctab-space">&emsp; &emsp;</span> 网页设计及开发 /<br>
 				<span class="ctab-space">&emsp; &emsp; &emsp; &emsp;</span> 前端开发</p> -->
@@ -212,10 +250,49 @@
 	</div>
 	<div class="scroll-hint">
 		<div class="scroller"></div>
+		<div class="scroller-mob"></div>
 		<div class="mouse"></div>
 	</div>
 	<div id="bg-mt-cook">
 		<img width="1932" height="auto" src="images/mt-cook.png">
+	</div>
+	<div id="creation-modal">
+		<div class="banner"><img class="img-fluid" src="images/creation/leather-apron/banner.jpg"></div>
+		<div class="content">
+			<div class="scroll-hint">
+				<div class="scroller"></div>
+				<div class="scroller-mob"></div>
+				<div class="mouse"></div>
+			</div>
+			<h2 class="title">leather apron</h2>
+			<div class="container">
+				<div class="col-md-8 col-md-offset-2 info">
+					<p class="p-date"><span class="date">NOV 2014</span> | <span class="type">Technician, Programming</span></p>
+					<p class="p-role">Website</p>
+					<p class="p-desc">"Why are they so cold?" is often a word we asked to a depression victim. Depression isn’t something where you can tell them to get over it, but it’s a long going process and patience that is needed to be there for them. Although there isn’t really the right cure for them, but what we could at least do is to talk and listen to their untold story.<br><br>This is an installation project that uses sound to interact with the mechanism and unfold the truth of the interactive storytelling.</p>
+				</div>
+				<div class="col-md-8 col-md-offset-2 gallery">
+					<div class="inner-holder">
+						<img class="img-fluid" src="images/creation/leather-apron/shot-lapron-01.jpg">
+						<img class="img-fluid" src="images/creation/leather-apron/shot-lapron-02.jpg">
+						<img class="img-fluid" src="images/creation/leather-apron/shot-lapron-03.jpg">
+						<img class="img-fluid" src="images/creation/leather-apron/shot-lapron-04.jpg">
+					</div>
+				</div>
+				<div class="col-md-8 col-md-offset-2 link">
+					<iframe src="https://player.vimeo.com/video/91166541" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+				</div>
+			</div>
+		</div>
+		<div class="next-project">
+			<a href="#leather-apron">
+				<img src="images/creation/cyea/banner.jpg">
+				<h3 class="project-title">next | <span class="title">leather apron</span><br>
+				<i class="fa fa-angle-down"></i></h3>
+			</a>
+		</div>
+		<div class="banner-fixed"></div>
+		<div class="btn-close"><i class="fa fa-close"></i></div>
 	</div>
 	<script type="text/javascript">
 		$(document).ready(function(){
@@ -224,6 +301,34 @@
 				slidesToShow: 2,
 				infinite: false
 			});
+			var data = {
+			    email: $("#email").val(),
+			    subject: $("#subject").val(),
+			    message: $("#msg").val()
+			};
+			$("form").on("submit", function(e){
+				e.preventDefault();
+				if (grecaptcha.getResponse() == ""){
+					$(".g-msg").fadeIn();
+				} else {
+					$.ajax({
+						type: "POST",
+						url: "email.php",
+						data: $("form").serialize(),
+						timeout: 5000,
+						success: function(){
+							$(".btn-submit").html("sent <i class='fa fa-check-circle'></i>");
+							$(".btn-submit").addClass("sent");
+						},
+						error: function(xhr, status, error) {
+							var err = eval("(" + xhr.responseText + ")");
+							alert(err.Message);
+							$(".btn-submit").html("please try again <i class='fa fa-refresh'></i>");
+						}
+					})
+				}	
+			})
+
 		})
 	</script>
 </body>
