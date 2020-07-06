@@ -7,20 +7,10 @@
 	<meta name="description" content="Wonder what will happen when design meets programming? This is Cyrus Liew, Front End Web Developer x Multimedia Designer, new to UX.">
 	<meta name="keywords" content="Cyrus Liew, Malaysia Designer, Malaysia Unicorn, Auckland Designer, Website, Front End Developer">
 
-	<!-- Google Tag Manager -->
-	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-				new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-			j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-			'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-	})(window,document,'script','dataLayer','GTM-KTN33QW');</script>
-	<!-- End Google Tag Manager -->
-
 	<link rel="icon" type="image/x-icon" href="images/favicon-new.png">
 	<link rel="stylesheet" type="text/css" href="css/tether.min.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css">
-	<!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700,700i,800i" rel="stylesheet"> -->
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/slick.css">
 	<link rel="stylesheet" type="text/css" href="css/slick-theme.css">
 	<link rel="stylesheet" type="text/css" href="css/mainstyles.css">
@@ -35,20 +25,8 @@
 	<script type="text/javascript" src="js/slick.min.js"></script>
 	<script type="text/javascript" src="js/classie.js"></script>
 	<script type="text/javascript" src="js/mainjs.js"></script>
-	<script type="text/javascript">
-		var onloadCallback = function() {
-			grecaptcha.render('g-recaptcha', {
-			  'sitekey' : '6LeZCykTAAAAAJuiwsgp2TBRJVgbi8Dtgb-ynhN3',
-			  'theme': 'dark'
-			});
-		};
-	</script>
 </head>
 <body class="loading">
-	<!-- Google Tag Manager (noscript) -->
-	<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KTN33QW"
-					  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-	<!-- End Google Tag Manager (noscript) -->
 	<div class="cloader"></div>
 	<button class="nav"><i class="fa fa-navicon"></i></button>
 	<nav id="menu">
@@ -288,6 +266,8 @@
 		<div class="banner-fixed"></div>
 		<div class="btn-close"><i class="fa fa-close"></i></div>
 	</div>
+
+	<script src="https://kit.fontawesome.com/b04f015872.js" crossorigin="anonymous"></script>
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$("body").removeClass("loading");
@@ -295,34 +275,6 @@
 				slidesToShow: 2,
 				infinite: false
 			});
-			var data = {
-			    email: $("#email").val(),
-			    subject: $("#subject").val(),
-			    message: $("#msg").val()
-			};
-			$("form").on("submit", function(e){
-				e.preventDefault();
-				if (grecaptcha.getResponse() == ""){
-					$(".g-msg").fadeIn();
-				} else {
-					$.ajax({
-						type: "POST",
-						url: "email.php",
-						data: $("form").serialize(),
-						timeout: 5000,
-						success: function(){
-							$(".btn-submit").html("sent <i class='fa fa-check-circle'></i>");
-							$(".btn-submit").addClass("sent");
-						},
-						error: function(xhr, status, error) {
-							var err = eval("(" + xhr.responseText + ")");
-							alert(err.Message);
-							$(".btn-submit").html("please try again <i class='fa fa-refresh'></i>");
-						}
-					})
-				}
-			})
-
 		})
 	</script>
 </body>

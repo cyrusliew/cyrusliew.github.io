@@ -257,133 +257,6 @@ $(document).ready(function() {
 		}
 		mobChecker();
 	});
-
-	// PRE LOADING //
-	$.preloadImages = function() {
-	  for (var i = 0; i < arguments.length; i++) {
-	    $("<img />").attr("src", arguments[i]);
-	  }
-	}
-
-	$.preloadImages(
-		"images/profile-photo.jpg",
-		"images/logo.png",
-		"images/mt-cook.png",
-		"images/badges/apple-lvl-3.png",
-		"images/badges/apple-lvl-4.png",
-		"images/badges/communication-lvl-beta.png",
-		"images/badges/communication-lvl-1.png",
-		"images/badges/communication-lvl-2.png",
-		"images/badges/communication-lvl-3.png",
-		"images/badges/communication-lvl-4.png",
-		"images/badges/cooking-lvl-beta.png",
-		"images/badges/cooking-lvl-1.png",
-		"images/badges/cooking-lvl-2.png",
-		"images/badges/cooking-lvl-3.png",
-		"images/badges/cooking-lvl-4.png",
-		"images/badges/cooking-lvl-1.png",
-		"images/badges/leadership-lvl-beta.png",
-		"images/badges/leadership-lvl-1.png",
-		"images/badges/leadership-lvl-2.png",
-		"images/badges/leadership-lvl-3.png",
-		"images/badges/leadership-lvl-4.png",
-		"images/badges/organizing-lvl-beta.png",
-		"images/badges/organizing-lvl-1.png",
-		"images/badges/organizing-lvl-2.png",
-		"images/badges/organizing-lvl-3.png",
-		"images/badges/organizing-lvl-4.png",
-		"images/badges/patient-lvl-beta.png",
-		"images/badges/patient-lvl-1.png",
-		"images/badges/patient-lvl-2.png",
-		"images/badges/patient-lvl-3.png",
-		"images/badges/patient-lvl-4.png",
-		"images/badges/jquery.png",
-		"images/badges/bootstrap.png",
-		"images/badges/less.png",
-		"images/badges/php.png",
-		"images/badges/wordpress.png",
-		"images/creation/avalon.png",
-		"images/creation/cyea.png",
-		"images/creation/deartime.png",
-		"images/creation/epools.png",
-		"images/creation/gsecure.png",
-		"images/creation/lapron.png",
-		"images/creation/meja.png",
-		"images/creation/qsrt.png",
-		"images/creation/sleekin.png",
-		"images/creation/smb.png",
-		"images/creation/wtsc.png",
-		"images/creation/avalon/banner.png",
-		"images/creation/avalon/shot-avalon-01.png",
-		"images/creation/avalon/shot-avalon-02.png",
-		"images/creation/avalon/shot-avalon-03.png",
-		"images/creation/avalon/shot-avalon-04.png",
-		"images/creation/avalon/shot-avalon-05.png",
-		"images/creation/cyea/banner.png",
-		"images/creation/cyea/shot-cyea-01.png",
-		"images/creation/cyea/shot-cyea-02.png",
-		"images/creation/cyea/shot-cyea-03.png",
-		"images/creation/cyea/shot-cyea-04.png",
-		"images/creation/deartime/banner.png",
-		"images/creation/deartime/shot-deartime-01.png",
-		"images/creation/deartime/shot-deartime-02.png",
-		"images/creation/deartime/shot-deartime-03.png",
-		"images/creation/deartime/shot-deartime-04.png",
-		"images/creation/deartime/shot-deartime-05.png",
-		"images/creation/eureka-pools/banner.png",
-		"images/creation/eureka-pools/shot-epools-01.png",
-		"images/creation/eureka-pools/shot-epools-02.png",
-		"images/creation/eureka-pools/shot-epools-03.png",
-		"images/creation/eureka-pools/shot-epools-04.png",
-		"images/creation/eureka-pools/shot-epools-05.png",
-		"images/creation/global-secure/banner.png",
-		"images/creation/global-secure/shot-gsecure-01.png",
-		"images/creation/global-secure/shot-gsecure-02.png",
-		"images/creation/global-secure/shot-gsecure-03.png",
-		"images/creation/global-secure/shot-gsecure-04.png",
-		"images/creation/global-secure/shot-gsecure-05.png",
-		"images/creation/leather-apron/banner.png",
-		"images/creation/leather-apron/shot-lapron-01.png",
-		"images/creation/leather-apron/shot-lapron-02.png",
-		"images/creation/leather-apron/shot-lapron-03.png",
-		"images/creation/leather-apron/shot-lapron-04.png",
-		"images/creation/leather-apron/shot-lapron-05.png",
-		"images/creation/leather-apron/shot-lapron-06.png",
-		"images/creation/leather-apron/shot-lapron-07.png",
-		"images/creation/meja/banner.png",
-		"images/creation/meja/shot-meja-01.png",
-		"images/creation/meja/shot-meja-02.png",
-		"images/creation/meja/shot-meja-03.png",
-		"images/creation/meja/shot-meja-04.png",
-		"images/creation/qsr-trading/banner.png",
-		"images/creation/qsr-trading/shot-qsrt-01.png",
-		"images/creation/qsr-trading/shot-qsrt-02.png",
-		"images/creation/qsr-trading/shot-qsrt-03.png",
-		"images/creation/qsr-trading/shot-qsrt-04.png",
-		"images/creation/sleek-in-360/banner.png",
-		"images/creation/sleek-in-360/shot-sleekin-01.png",
-		"images/creation/sleek-in-360/shot-sleekin-02.png",
-		"images/creation/sleek-in-360/shot-sleekin-03.png",
-		"images/creation/sleek-in-360/shot-sleekin-04.png",
-		"images/creation/sleek-in-360/shot-sleekin-05.png",
-		"images/creation/sleek-in-360/shot-sleekin-06.png",
-		"images/creation/sleek-in-360/shot-sleekin-07.png",
-		"images/creation/squeeeze-me-baby/banner.png",
-		"images/creation/squeeeze-me-baby/shot-smb-01.png",
-		"images/creation/squeeeze-me-baby/shot-smb-02.png",
-		"images/creation/squeeeze-me-baby/shot-smb-03.png",
-		"images/creation/squeeeze-me-baby/shot-smb-04.png",
-		"images/creation/squeeeze-me-baby/shot-smb-05.png",
-		"images/creation/squeeeze-me-baby/shot-smb-06.png",
-		"images/creation/why-are-they-so-cold/banner.png",
-		"images/creation/why-are-they-so-cold/shot-wtsc-01.png",
-		"images/creation/why-are-they-so-cold/shot-wtsc-02.png",
-		"images/creation/why-are-they-so-cold/shot-wtsc-03.png",
-		"images/creation/why-are-they-so-cold/shot-wtsc-04.png",
-		"images/creation/why-are-they-so-cold/shot-wtsc-05.png",
-		"images/creation/why-are-they-so-cold/shot-wtsc-06.png",
-		"images/creation/why-are-they-so-cold/shot-wtsc-07.png"
-	);
 });
 function mobChecker(){
 	var winWidth = $(this).width();
@@ -509,26 +382,37 @@ function pnpContentUpdate(numOfSlides){
 
 function creationDisplay(){
 	var i = 0;
-	while (creationData[i]){
-		var project = creationData[i];
-		var name = project["name"];
-		var hash = project["hash"];
-		var awecon = project["awecon"];
-		var timeline = project["timeline"];
-		var banner = project["banner"];
-		var thumbnail = project["thumbnail"];
-		var content = project["content"];
-		var screenshots = project["screenshots"];
-		$("#id-creation .container").append("<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3 project'><div class='holder'><img class='screenshot' src='images/creation/"+thumbnail+"' /><a href='#"+hash+"'><div class='middle'><i class='fa fa-"+awecon+"'></i><h3 class='title'>"+name+"</h3><p class='date'>"+timeline+"</p></div></a></div></div>");
-		i++;
-	}
+	window.creationData = creationData;
+
+	creationData.forEach(function(creation) {
+		const childToAppend = `
+			<div class='col-xs-12 col-sm-6 col-md-4 col-lg-3 project'>
+				<div class='holder'>
+					<img class='screenshot' src='images/creation/${creation['thumbnail']}' />
+					<a href='${creation['url'] ? creation['url'] : `#${creation['hash']}`}' ${creation['url'] ? 'target="_blank"' : ''}>
+						<div class='middle'>
+							<i class='${creation['awecon']}'></i>
+							<h3 class='title'>${creation['name']}</h3>
+							<p class='date'>${creation['timeline']}</p>
+						</div>
+					</a>
+				</div>
+			</div>
+		`;
+		$("#id-creation .container").append(childToAppend);
+	})
+	
+
 	$("#id-creation .project a").on("click", function(){
-		$("#creation-modal").fadeIn();
-		$("#creation-modal").scrollTop(0);
-		$.fn.fullpage.setAllowScrolling(false);
-		var currentBanner = $("#creation-modal .banner");
-		curProjectIndex = $(this).parents().eq(1).index();
-		projectDisplay(curProjectIndex);
+		console.log($(this).attr('href').charAt[0]);
+		if ($(this).attr('href').indexOf('#') > -1) {
+			$("#creation-modal").fadeIn();
+			$("#creation-modal").scrollTop(0);
+			$.fn.fullpage.setAllowScrolling(false);
+			var currentBanner = $("#creation-modal .banner");
+			curProjectIndex = $(this).parents().eq(1).index();
+			projectDisplay(curProjectIndex);
+		}
 		// console.log("curProjectIndex = "+curProjectIndex);
 	});
 }
