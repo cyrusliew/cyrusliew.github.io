@@ -404,7 +404,6 @@ function creationDisplay(){
 	
 
 	$("#id-creation .project a").on("click", function(){
-		console.log($(this).attr('href').charAt[0]);
 		if ($(this).attr('href').indexOf('#') > -1) {
 			$("#creation-modal").fadeIn();
 			$("#creation-modal").scrollTop(0);
@@ -413,7 +412,6 @@ function creationDisplay(){
 			curProjectIndex = $(this).parents().eq(1).index();
 			projectDisplay(curProjectIndex);
 		}
-		// console.log("curProjectIndex = "+curProjectIndex);
 	});
 }
 
