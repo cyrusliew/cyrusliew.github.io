@@ -103,7 +103,7 @@ $(document).ready(function() {
 						TweenMax.to("#bg-mt-cook", animSpeed, {bottom: "-35%"});
 						TweenMax.to(".csite-name", animFSpeed, {opacity: 1, delay: animSpeed});
 						TweenMax.to(".scroll-hint", animSpeed, {bottom: 0});
-						changeImg(false, "logo-2020.png", 0.125);
+						changeImg(false, "logo-2020.svg", 0.125);
 						gradientDir($("#fadeGrad"), "40%", "43%", "40%", "55%");
 
 						curIndex = 1;
