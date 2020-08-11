@@ -1,88 +1,55 @@
 [
 	{
-
-		"year":"2012",
-		"timeline":"DEC 2012",
-		"company":"Big Bad Wolf Book Sale Malaysia",
-		"role":"as Children Book Section Floor Crew",
-		"content":"I was part of the floor crew under children book section area, giving the Big Bad Wolf Book Sale the largest book sale in the world, I have developed myself to be able to cope with Mount Everest sized of messy books.",
+		"year":"PRESENT",
+		"timeline":"SINCE 2013",
+		"company":"Freelance Web Design & Developer",
+		"role":"",
+		"content":"I just cannot tell how much I love design and programming, the passion is as strong as the day I started it all, I love seeing myself getting better along the way. Keep exploring different ways to achieve better results is the biggest satisfaction of everything.",
 		"acquirement":[
 			{
-				"name":"Organizing Skill Level 1",
-				"imgsrc":"badges/organizing-lvl-1.png"
+				"name":"jQuery",
+				"imgsrc":"badges/jquery.png"
 			},
 			{
-				"name":"Patient Skill Level 1",
-				"imgsrc":"badges/patient-lvl-1.png"
+				"name":"Bootstrap",
+				"imgsrc":"badges/bootstrap.png"
+			},
+			{
+				"name":"Wordpress",
+				"imgsrc":"badges/wordpress.png"
+			},
+			{
+				"name":"LESS CSS",
+				"imgsrc":"badges/less.png"
+			},
+			{
+				"name":"PHP",
+				"imgsrc":"badges/php.png"
 			}
 		]
 	},
 	{
-		"year":"2013",
-		"timeline":"DEC 2013",
-		"company":"Big Bad Wolf Book Sale Malaysia",
-		"role":"as Children Book Section Sub Team Leader",
-		"content":"Return to the book sale as Sub Team Leader. More responsibility as leading a small rookie team is needed this year. Book restocking, reporting to main leader be familiar with books' placement was the job scope.",
+		"year":"2017",
+		"timeline":"JAN 2017 - PRESENT",
+		"company":"Communica",
+		"role":"as Drupal Front End Web Developer/ Designer",
+		"content":"One of the powerful CMS in the market, specialise in front end aspects, from custom theming to custom site structure that build around clients' needs.",
 		"acquirement":[
 			{
-				"name":"Organizing Skill Level 2",
-				"imgsrc":"badges/organizing-lvl-2.png",
-				"leveled": true
+				"name":"jQuery",
+				"imgsrc":"badges/jquery.png"
 			},
 			{
-				"name":"Patient Skill Level 2",
-				"imgsrc":"badges/patient-lvl-2.png",
-				"leveled": true
+				"name":"Drupal",
+				"imgsrc":"badges/drupal8.png"
 			},
 			{
-				"name":"Leadership Skill Level Beta",
-				"imgsrc":"badges/leadership-lvl-beta.png"
+				"name":"SCSS",
+				"imgsrc":"badges/less.png"
 			},
 			{
-				"name":"Communication Skill Level Beta",
-				"imgsrc":"badges/communication-lvl-beta.png"
-			}
-		]
-	},
-	{
-		"year":"2014",
-		"timeline":"MAY - AUG 2014",
-		"company":"Geometry Global",
-		"role":"as Interface Developer Intern, Front End Web Programmer",
-		"content":"When I fell in love in programming, flash banner, facebook social campaign page, interactive website were the best companion during that time.",
-		"acquirement":[
-			{
-				"name":"Communication Skill Level 1",
-				"imgsrc":"badges/communication-lvl-1.png",
-				"leveled": true
-			}
-		]
-	},
-	{
-		"year":"2015",
-		"timeline":"FEB - MAY 2015",
-		"company":"Alphapod",
-		"role":"as iOS App Developer Intern",
-		"content":"I was having a strong will to dive into iOS App Development and decided give it a go, the time where I met objective-C, and messing with it around. Have an app published up on AppStore.",
-		"acquirement":[
-			{
-				"name":"Communication Skill Level 2",
-				"imgsrc":"badges/communication-lvl-2.png",
-				"leveled": true
-			}
-		]
-	},
-	{
-		"year":"2015",
-		"timeline":"JUN 2015 - JAN 2016",
-		"company":"Astro GoShop",
-		"role":"as Freelance Graphic Designer",
-		"content":"A 7 months' contract to be part of a young and fast growing e-commerce platform which under one of the largest TV broadcasting brand - Astro. Product page description, web banner, e-newsletter design are in the job scope.",
-		"acquirement":[
-			{
-				"name":"Communication Skill Level 3",
-				"imgsrc":"badges/communication-lvl-3.png",
-				"leveled": true
+				"name":"PHP",
+				"imgsrc":"badges/php.png"
 			}
 		]
 	},
@@ -114,56 +81,89 @@
 		]
 	},
 	{
-		"year":"2017",
-		"timeline":"JAN 2017 - PRESENT",
-		"company":"Communica",
-		"role":"as Drupal Front End Web Developer/ Designer",
-		"content":"One of the powerful CMS in the market, specialise in front end aspects, from custom theming to custom site structure that build around clients' needs.",
+		"year":"2015",
+		"timeline":"JUN 2015 - JAN 2016",
+		"company":"Astro GoShop",
+		"role":"as Freelance Graphic Designer",
+		"content":"A 7 months' contract to be part of a young and fast growing e-commerce platform which under one of the largest TV broadcasting brand - Astro. Product page description, web banner, e-newsletter design are in the job scope.",
 		"acquirement":[
 			{
-				"name":"jQuery",
-				"imgsrc":"badges/jquery.png"
-			},
-			{
-				"name":"Drupal",
-				"imgsrc":"badges/drupal8.png"
-			},
-			{
-				"name":"SCSS",
-				"imgsrc":"badges/less.png"
-			},
-			{
-				"name":"PHP",
-				"imgsrc":"badges/php.png"
+				"name":"Communication Skill Level 3",
+				"imgsrc":"badges/communication-lvl-3.png",
+				"leveled": true
 			}
 		]
 	},
 	{
-		"year":"PRESENT",
-		"timeline":"SINCE 2013",
-		"company":"Freelance Web Design & Developer",
-		"role":"",
-		"content":"I just cannot tell how much I love design and programming, the passion is as strong as the day I started it all, I love seeing myself getting better along the way. Keep exploring different ways to achieve better results is the biggest satisfaction of everything.",
+		"year":"2015",
+		"timeline":"FEB - MAY 2015",
+		"company":"Alphapod",
+		"role":"as iOS App Developer Intern",
+		"content":"I was having a strong will to dive into iOS App Development and decided give it a go, the time where I met objective-C, and messing with it around. Have an app published up on AppStore.",
 		"acquirement":[
 			{
-				"name":"jQuery",
-				"imgsrc":"badges/jquery.png"
+				"name":"Communication Skill Level 2",
+				"imgsrc":"badges/communication-lvl-2.png",
+				"leveled": true
+			}
+		]
+	},
+	{
+		"year":"2014",
+		"timeline":"MAY - AUG 2014",
+		"company":"Geometry Global",
+		"role":"as Interface Developer Intern, Front End Web Programmer",
+		"content":"When I fell in love in programming, flash banner, facebook social campaign page, interactive website were the best companion during that time.",
+		"acquirement":[
+			{
+				"name":"Communication Skill Level 1",
+				"imgsrc":"badges/communication-lvl-1.png",
+				"leveled": true
+			}
+		]
+	},
+	{
+		"year":"2013",
+		"timeline":"DEC 2013",
+		"company":"Big Bad Wolf Book Sale Malaysia",
+		"role":"as Children Book Section Sub Team Leader",
+		"content":"Return to the book sale as Sub Team Leader. More responsibility as leading a small rookie team is needed this year. Book restocking, reporting to main leader be familiar with books' placement was the job scope.",
+		"acquirement":[
+			{
+				"name":"Organizing Skill Level 2",
+				"imgsrc":"badges/organizing-lvl-2.png",
+				"leveled": true
 			},
 			{
-				"name":"Bootstrap",
-				"imgsrc":"badges/bootstrap.png"
+				"name":"Patient Skill Level 2",
+				"imgsrc":"badges/patient-lvl-2.png",
+				"leveled": true
 			},
 			{
-				"name":"Wordpress",
-				"imgsrc":"badges/wordpress.png"
+				"name":"Leadership Skill Level Beta",
+				"imgsrc":"badges/leadership-lvl-beta.png"
 			},
 			{
-				"name":"LESS CSS",
-				"imgsrc":"badges/less.png"
+				"name":"Communication Skill Level Beta",
+				"imgsrc":"badges/communication-lvl-beta.png"
+			}
+		]
+	},
+	{
+
+		"year":"2012",
+		"timeline":"DEC 2012",
+		"company":"Big Bad Wolf Book Sale Malaysia",
+		"role":"as Children Book Section Floor Crew",
+		"content":"I was part of the floor crew under children book section area, giving the Big Bad Wolf Book Sale the largest book sale in the world, I have developed myself to be able to cope with Mount Everest sized of messy books.",
+		"acquirement":[
+			{
+				"name":"Organizing Skill Level 1",
+				"imgsrc":"badges/organizing-lvl-1.png"
 			},
 			{
-				"name":"PHP",
-				"imgsrc":"badges/php.png"
+				"name":"Patient Skill Level 1",
+				"imgsrc":"badges/patient-lvl-1.png"
 			}
 		]
 	}
