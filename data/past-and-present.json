@@ -30,7 +30,7 @@
 	},
 	{
 		"year":"2017",
-		"timeline":"JAN 2017 - PRESENT",
+		"timeline":"OCT 2016 - PRESENT",
 		"company":"Communica",
 		"role":"as Drupal Front End Web Developer/ Designer",
 		"content":"One of the powerful CMS in the market, specialise in front end aspects, from custom theming to custom site structure that build around clients' needs.",
@@ -54,109 +54,21 @@
 		]
 	},
 	{
-		"year":"2016",
-		"timeline":"FEB 2016 - JUN 2016",
-		"company":"McLean Apple Pack House",
-		"role":"as Apple Packer",
-		"content":"The farthest place I ever travel from my home, living in a totally fresh and new place – New Zealand. It is a total fun and great experience by working as something completely different than what I used to do and mixing with local people.",
-		"acquirement":[
-			{
-				"name":"Communication Skill Level 4",
-				"imgsrc":"badges/communication-lvl-4.png",
-				"leveled": true
-			},
-			{
-				"name":"Organizing Skill Level 3",
-				"imgsrc":"badges/organizing-lvl-3.png",
-				"leveled": true
-			},
-			{
-				"name":"Apple Knowledge Level 3",
-				"imgsrc":"badges/apple-lvl-3.png"
-			},
-			{
-				"name":"Cooking Skill Level 2",
-				"imgsrc":"badges/cooking-lvl-3.png"
-			}
-		]
-	},
-	{
-		"year":"2015",
-		"timeline":"JUN 2015 - JAN 2016",
-		"company":"Astro GoShop",
-		"role":"as Freelance Graphic Designer",
-		"content":"A 7 months' contract to be part of a young and fast growing e-commerce platform which under one of the largest TV broadcasting brand - Astro. Product page description, web banner, e-newsletter design are in the job scope.",
-		"acquirement":[
-			{
-				"name":"Communication Skill Level 3",
-				"imgsrc":"badges/communication-lvl-3.png",
-				"leveled": true
-			}
-		]
-	},
-	{
-		"year":"2015",
-		"timeline":"FEB - MAY 2015",
-		"company":"Alphapod",
-		"role":"as iOS App Developer Intern",
-		"content":"I was having a strong will to dive into iOS App Development and decided give it a go, the time where I met objective-C, and messing with it around. Have an app published up on AppStore.",
-		"acquirement":[
-			{
-				"name":"Communication Skill Level 2",
-				"imgsrc":"badges/communication-lvl-2.png",
-				"leveled": true
-			}
-		]
-	},
-	{
-		"year":"2014",
-		"timeline":"MAY - AUG 2014",
-		"company":"Geometry Global",
-		"role":"as Interface Developer Intern, Front End Web Programmer",
-		"content":"When I fell in love in programming, flash banner, facebook social campaign page, interactive website were the best companion during that time.",
-		"acquirement":[
-			{
-				"name":"Communication Skill Level 1",
-				"imgsrc":"badges/communication-lvl-1.png",
-				"leveled": true
-			}
-		]
-	},
-	{
-		"year":"2013",
-		"timeline":"DEC 2013",
-		"company":"Big Bad Wolf Book Sale Malaysia",
-		"role":"as Children Book Section Sub Team Leader",
-		"content":"Return to the book sale as Sub Team Leader. More responsibility as leading a small rookie team is needed this year. Book restocking, reporting to main leader be familiar with books' placement was the job scope.",
-		"acquirement":[
-			{
-				"name":"Organizing Skill Level 2",
-				"imgsrc":"badges/organizing-lvl-2.png",
-				"leveled": true
-			},
-			{
-				"name":"Patient Skill Level 2",
-				"imgsrc":"badges/patient-lvl-2.png",
-				"leveled": true
-			},
-			{
-				"name":"Leadership Skill Level Beta",
-				"imgsrc":"badges/leadership-lvl-beta.png"
-			},
-			{
-				"name":"Communication Skill Level Beta",
-				"imgsrc":"badges/communication-lvl-beta.png"
-			}
-		]
-	},
-	{
 
-		"year":"2012",
-		"timeline":"DEC 2012",
-		"company":"Big Bad Wolf Book Sale Malaysia",
-		"role":"as Children Book Section Floor Crew",
-		"content":"I was part of the floor crew under children book section area, giving the Big Bad Wolf Book Sale the largest book sale in the world, I have developed myself to be able to cope with Mount Everest sized of messy books.",
+		"year":"2013",
+		"timeline":"AUG 2013 - SEPT 2016",
+		"company":"Advisory Apps Sdn. Bhd.",
+		"role":"Front End Developer",
+		"content":"From static HTML to CMS powered website, this is where it started from.",
 		"acquirement":[
+			{
+				"name":"jQuery",
+				"imgsrc":"badges/jquery.png"
+			},
+			{
+				"name":"SCSS",
+				"imgsrc":"badges/less.png"
+			},
 			{
 				"name":"Organizing Skill Level 1",
 				"imgsrc":"badges/organizing-lvl-1.png"
